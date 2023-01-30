@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap%22");
+
+*{
+font-family: 'Poppins';
+}
+
+html,body{
+    display: grid;
+    place-items: center;
+  }
+
+body{
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.boxBike{
+    margin: 20px 40px;
+    margin-top: 400px;
+    background: linear-gradient(45deg, rgb(255, 0, 0), rgba(0,0,0,0.2));
+    width: 500px;
+    height: 300px;
+    border: 2px solid rgb(255, 0, 0);
+    display: flex;
+    border-radius: 9px;
+    flex-direction: column;
+  
+  }
+  .bike{
+    transition: 1s;
+    transform: scale(1.1);
+    background-color: transparent;
+    width: 300px;
+    display: block;
+    margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  
+  .bike2{
+    transition: 1s;
+    transform: scale(1.1);
+    background-color: transparent;
+    width: 250px;
+    display: block;
+    margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .bike:hover, .bike2:hover{
+    transition: 1s;
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+  .divbike{
+    width: 50px;
+    border: 2px solid rgb(255, 0, 0);
+    animation: opentitle ease 1s forwards;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  }
+  .notificationBike{
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: whitesmoke;
+  }
+.Containerbike{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    animation: fadein 1s forwards;
+    transform: scale(0);
+    opacity: 0;
+}
+@keyframes fadein {
+    50%{
+    transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+  .titlekBike{
+    color: rgb(255, 0, 0);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em;
+  }
+  
+  @keyframes opentitle {
+    100%{
+      width: 200px;
+    }
+  }
+/* not needed  */
+/* display: block;
+margin-left: auto;
+margin-right: auto; */
+
+/* 
+body {
+overflow-y: scroll 
+} */
